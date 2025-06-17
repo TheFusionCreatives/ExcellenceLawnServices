@@ -495,58 +495,79 @@
     </section>
 
     <!-- Gallery Section -->
-        <section id="gallery" class="py-16 bg-white">
+       <section id="gallery" class="py-16 bg-gradient-to-b from-primary/5 via-white to-primary/10">
   <div class="container mx-auto px-4">
     <div class="text-center mb-12">
-      <h2 class="text-3xl font-bold text-gray-800 mb-4">Before & After Gallery</h2>
-      <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
-      <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-        See the transformation we bring to properties with our professional lawn care services.
+      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-4 tracking-tight drop-shadow-lg">Before & After Gallery</h2>
+      <div class="mx-auto mb-6 w-36 h-1 bg-gradient-to-r from-primary via-secondary to-accent rounded-full"></div>
+      <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+        See how we transform properties—swipe or scroll to experience our dramatic results!
       </p>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <!-- Pair 1: Lawn Cut -->
-      <div class="bg-gray-50 rounded-lg shadow-md p-4 flex flex-col items-center">
-        <span class="font-semibold text-secondary mb-2">Before: Lawn Cut</span>
-        <img src="assets/before-lawn.jpg"
-             alt="Before Lawn Cut"
-             class="rounded-lg object-cover w-full h-64 mb-2" />
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <!-- Lawn Cut -->
+      <div class="group bg-white/80 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow overflow-hidden flex flex-col items-center">
+        <div class="relative w-full flex flex-col items-center">
+          <span class="absolute top-4 left-4 z-10 bg-secondary/80 text-white px-3 py-1 rounded-full text-xs font-semibold shadow">Lawn Cut</span>
+          <div class="flex flex-col gap-4 mt-8 mb-4 items-center w-full">
+            <div class="relative w-4/5 mx-auto aspect-[3/4] rounded-xl overflow-hidden shadow-lg">
+              <img src="assets/lawn-cut-before.png" alt="Before Lawn Cut"
+                class="object-cover w-full h-full scale-105 transition-transform duration-300 group-hover:scale-110 grayscale group-hover:grayscale-0" />
+              <span class="absolute bottom-2 left-2 bg-white/90 text-secondary px-2 py-1 rounded shadow text-xs font-bold">Before</span>
+            </div>
+            <div class="relative w-4/5 mx-auto aspect-[3/4] rounded-xl overflow-hidden shadow-lg">
+              <img src="assets/lawn-cut-after.png" alt="After Lawn Cut"
+                class="object-cover w-full h-full scale-105 transition-transform duration-300 group-hover:scale-110" />
+              <span class="absolute bottom-2 left-2 bg-white/90 text-green-700 px-2 py-1 rounded shadow text-xs font-bold">After</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="bg-gray-50 rounded-lg shadow-md p-4 flex flex-col items-center">
-        <span class="font-semibold text-green-700 mb-2">After: Lawn Cut</span>
-        <img src="assets/after-lawn.jpg"
-             alt="After Lawn Cut"
-             class="rounded-lg object-cover w-full h-64 mb-2" />
+      <!-- Garden Bed Cleanup -->
+      <div class="group bg-white/80 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow overflow-hidden flex flex-col items-center">
+        <div class="relative w-full flex flex-col items-center">
+          <span class="absolute top-4 left-4 z-10 bg-primaryDark/80 text-white px-3 py-1 rounded-full text-xs font-semibold shadow">Garden Bed</span>
+          <div class="flex flex-col gap-4 mt-8 mb-4 items-center w-full">
+            <div class="relative w-4/5 mx-auto aspect-[3/4] rounded-xl overflow-hidden shadow-lg">
+              <img src="assets/garden-bed-before.png" alt="Before Garden Bed Cleanup"
+                class="object-cover w-full h-full scale-105 transition-transform duration-300 group-hover:scale-110 grayscale group-hover:grayscale-0" />
+              <span class="absolute bottom-2 left-2 bg-white/90 text-secondary px-2 py-1 rounded shadow text-xs font-bold">Before</span>
+            </div>
+            <div class="relative w-4/5 mx-auto aspect-[3/4] rounded-xl overflow-hidden shadow-lg">
+              <img src="assets/garden-bed-after.png" alt="After Garden Bed Cleanup"
+                class="object-cover w-full h-full scale-105 transition-transform duration-300 group-hover:scale-110" />
+              <span class="absolute bottom-2 left-2 bg-white/90 text-green-700 px-2 py-1 rounded shadow text-xs font-bold">After</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- Pair 2: Garden Bed Cleanup -->
-      <div class="bg-gray-50 rounded-lg shadow-md p-4 flex flex-col items-center">
-        <span class="font-semibold text-secondary mb-2">Before: Garden Bed Cleanup</span>
-        <img src="assets/before-bed.jpg"
-             alt="Before Garden Bed Cleanup"
-             class="rounded-lg object-cover w-full h-64 mb-2" />
+      <!-- Leaf Cleanup -->
+      <div class="group bg-white/80 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow overflow-hidden flex flex-col items-center">
+        <div class="relative w-full flex flex-col items-center">
+          <span class="absolute top-4 left-4 z-10 bg-accent/80 text-white px-3 py-1 rounded-full text-xs font-semibold shadow">Leaf Cleanup</span>
+          <div class="flex flex-col gap-4 mt-8 mb-4 items-center w-full">
+            <div class="relative w-4/5 mx-auto aspect-[3/4] rounded-xl overflow-hidden shadow-lg">
+              <img src="assets/leaf-cleanup-before.png" alt="Before Leaf Cleanup"
+                class="object-cover w-full h-full scale-105 transition-transform duration-300 group-hover:scale-110 grayscale group-hover:grayscale-0" />
+              <span class="absolute bottom-2 left-2 bg-white/90 text-secondary px-2 py-1 rounded shadow text-xs font-bold">Before</span>
+            </div>
+            <div class="relative w-4/5 mx-auto aspect-[3/4] rounded-xl overflow-hidden shadow-lg">
+              <img src="assets/leaf-cleanup-after.png" alt="After Leaf Cleanup"
+                class="object-cover w-full h-full scale-105 transition-transform duration-300 group-hover:scale-110" />
+              <span class="absolute bottom-2 left-2 bg-white/90 text-green-700 px-2 py-1 rounded shadow text-xs font-bold">After</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="bg-gray-50 rounded-lg shadow-md p-4 flex flex-col items-center">
-        <span class="font-semibold text-green-700 mb-2">After: Garden Bed Cleanup</span>
-        <img src="assets/after-bed.jpg"
-             alt="After Garden Bed Cleanup"
-             class="rounded-lg object-cover w-full h-64 mb-2" />
-      </div>
-      <!-- Pair 3: Leaf Cleanup -->
-      <div class="bg-gray-50 rounded-lg shadow-md p-4 flex flex-col items-center">
-        <span class="font-semibold text-secondary mb-2">Before: Leaf Cleanup</span>
-        <img src="assets/before-leaf.jpg"
-             alt="Before Leaf Cleanup"
-             class="rounded-lg object-cover w-full h-64 mb-2" />
-      </div>
-      <div class="bg-gray-50 rounded-lg shadow-md p-4 flex flex-col items-center">
-        <span class="font-semibold text-green-700 mb-2">After: Leaf Cleanup</span>
-        <img src="assets/after-leaf.jpg"
-             alt="After Leaf Cleanup"
-             class="rounded-lg object-cover w-full h-64 mb-2" />
+    </div>
+    <div class="flex justify-center mt-10">
+      <div class="p-6 bg-gradient-to-r from-secondary to-primary rounded-xl shadow-xl text-white font-bold text-xl tracking-wide hover:scale-105 transition-transform">
+        Ready for your transformation? <a href="#contact" class
       </div>
     </div>
   </div>
 </section>
+
 
     <!-- CTA Section -->
     <section class="py-16 bg-primary bg-opacity-10">
