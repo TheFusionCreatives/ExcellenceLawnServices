@@ -107,12 +107,15 @@
         .social-icon:hover {
             transform: scale(1.2);
         }
-        document.getElementById('scroll-to-video').addEventListener('click', function(e){
-        e.preventDefault();
-        document.getElementById('personal-welcome-video').scrollIntoView({ behavior: 'smooth' });
-        }
     </style>
 </head>
+    <!-- Place this just before </body> -->
+<script>
+document.getElementById('scroll-to-video').addEventListener('click', function(e){
+    e.preventDefault();
+    document.getElementById('personal-welcome-video').scrollIntoView({ behavior: 'smooth' });
+});
+</script>
 <body class="font-sans bg-gray-50">
     <!-- Navigation -->
     <nav class="bg-white shadow-md fixed w-full z-50 top-0 left-0">
