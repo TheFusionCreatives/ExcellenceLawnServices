@@ -8,23 +8,24 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/png" href="assets/favicon.png">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#87CEEB',
-                        primaryDark: '#5F9EA0',
-                        secondary: '#4CAF50',
-                        accent: '#3B7302',
-                    },
-                    fontFamily: {
-                        sans: ['Montserrat', 'sans-serif'],
-                    },
-                }
-            }
-        }
-    </script>
+   <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+        primary: '#0BC0DF',
+        primaryDark: '#0899AF',
+        secondary: '#4CAF50',
+        accent: '#3B7302',
+        dark: '#111827', // off-black for text
+          },
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif'],
+      }
+    }
+  }
+}
+</script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
         
@@ -142,21 +143,28 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section h-screen flex items-center justify-center text-white pt-16">
-        <div class="container mx-auto px-4 text-center">
-            <h1 class="text-4xl md:text-6xl font-bold mb-6">Excellence Lawn Services</h1>
-            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Professional lawn care and landscaping services with unmatched quality and customer satisfaction.</p>
-            <div class="flex flex-col md:flex-row justify-center gap-4">
-                <a href="tel:9186317966" class="cta-button bg-secondary hover:bg-accent text-white font-bold py-3 px-8 rounded-full text-lg flex items-center justify-center">
-                    <svg class="h-5 w-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                    Call Now: (918) 631-7966
-                </a>
-                <a href="#contact" class="cta-button bg-white hover:bg-gray-100 text-secondary font-bold py-3 px-8 rounded-full text-lg">Get a Free Quote</a>
-            </div>
-        </div>
-    </section>
+    <section class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary via-primaryDark to-accent overflow-hidden">
+  <!-- Decorative Diagonal Highlight -->
+  <div class="absolute -top-32 left-1/2 transform -translate-x-1/2 w-[140vw] h-96 bg-gradient-to-r from-primaryDark/60 via-primary/90 to-primary/60 blur-2xl opacity-30 rotate-[-8deg] pointer-events-none"></div>
+  
+  <!-- Glassmorphism Content Card -->
+  <div class="relative z-10 max-w-2xl w-full px-8 py-16 rounded-3xl shadow-2xl bg-primary/60 backdrop-blur-md border border-primaryDark/40 flex flex-col items-center">
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-6 text-dark drop-shadow-md tracking-tight">Excellence Lawn Services</h1>
+    <p class="text-lg md:text-2xl mb-8 text-dark/90 font-medium max-w-xl text-center">Professional lawn care and landscaping with unmatched quality and customer satisfaction.</p>
+    <div class="flex flex-col md:flex-row gap-4 w-full justify-center">
+      <a href="tel:9186317966" class="inline-block px-8 py-4 rounded-full bg-accent/90 text-primary font-bold text-lg tracking-wide shadow-lg hover:bg-accent transition">Call Now: (918) 631-7966</a>
+      <a href="#contact" class="inline-block px-8 py-4 rounded-full bg-primaryDark/90 text-dark font-bold text-lg tracking-wide shadow-lg hover:bg-primaryDark transition">Get a Free Quote</a>
+    </div>
+  </div>
+  
+  <!-- Decorative Bottom Wave SVG in Blue -->
+  <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none pointer-events-none">
+    <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-28">
+      <path d="M0 80 Q360 120 720 80T1440 80V120H0V80Z" fill="#0899AF" fill-opacity="0.4"/>
+      <path d="M0 100 Q360 60 720 100T1440 100V120H0V100Z" fill="#0BC0DF" fill-opacity="0.6"/>
+    </svg>
+  </div>
+</section>
  <!-- Video Section -->
         <section class="py-16 bg-white">
             <div class="container mx-auto px-4">
