@@ -109,14 +109,11 @@
         }
     </style>
 </head>
-    <!-- Place this just before </body> -->
 <script>
 document.getElementById('scroll-to-video').addEventListener('click', function(e){
     e.preventDefault();
     document.getElementById('personal-welcome-video').scrollIntoView({ behavior: 'smooth' });
 });
-</script>
-<script>
   document.getElementById('menu-toggle').addEventListener('click', function() {
     var menu = document.getElementById('mobile-menu');
     menu.classList.toggle('hidden');
