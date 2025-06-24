@@ -109,16 +109,6 @@
         }
     </style>
 </head>
-<script>
-document.getElementById('scroll-to-video').addEventListener('click', function(e){
-    e.preventDefault();
-    document.getElementById('personal-welcome-video').scrollIntoView({ behavior: 'smooth' });
-});
-  document.getElementById('menu-toggle').addEventListener('click', function() {
-    var menu = document.getElementById('mobile-menu');
-    menu.classList.toggle('hidden');
-  });
-</script>
 
 <body class="font-sans bg-gray-50">
     <!-- Navigation -->
@@ -862,3 +852,17 @@ document.getElementById('scroll-to-video').addEventListener('click', function(e)
                                         <p class="text-gray-600">Reach out anytime! We commit to connect within 24 hours!</p>
                                     </div>
                                         </div>
+
+<!-- Place your script here -->
+    <script>
+    document.getElementById('scroll-to-video').addEventListener('click', function(e){
+        e.preventDefault();
+        document.getElementById('personal-welcome-video').scrollIntoView({ behavior: 'smooth' });
+    });
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+        var menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
+    });
+    </script>
+</body>
+</html>
